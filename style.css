@@ -56,10 +56,29 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #0075c9, #00b388);
+  position: relative;
+  background-image: url('assets/ai_background.png');
+  background-size: cover;
+  background-position: center;
   color: #fff;
   padding: 6rem 0;
   text-align: center;
+}
+
+/* Dark overlay for hero to improve text contrast */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
@@ -221,4 +240,88 @@ body {
   color: #fff;
   text-align: center;
   font-size: 0.9rem;
+}
+
+/* Emoji icons in service headings */
+.emoji {
+  margin-right: 0.4rem;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-subtitle {
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card {
+  background-color: #f7f9fb;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.pricing-card h3 {
+  margin-top: 0;
+  color: #0075c9;
+  font-size: 1.5rem;
+}
+
+.pricing-card .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00b388;
+  margin: 0.5rem 0 1rem;
+}
+
+.pricing-card .price span {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card ul li {
+  margin-bottom: 0.75rem;
+}
+
+.pricing-card.featured {
+  background-color: #00b388;
+  color: #fff;
+}
+
+.pricing-card.featured h3 {
+  color: #fff;
+}
+
+.pricing-card.featured .price {
+  color: #fff;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
