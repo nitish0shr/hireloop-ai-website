@@ -621,14 +621,15 @@ body {
   position: relative;
   z-index: 2;
 }
+/* Decorative mint shape behind hero illustration */
 .hero-shape {
   position: absolute;
-  top: -20%;
-  left: 10%;
-  width: 80%;
-  height: 120%;
+  top: -15%;
+  left: 5%;
+  width: 90%;
+  height: 130%;
   background: var(--color-accent-mint);
-  opacity: 0.15;
+  opacity: 0.25;
   border-radius: 50%;
   z-index: 1;
 }
@@ -866,13 +867,14 @@ body {
   z-index: 2;
 }
 .hero-shape {
+  /* unify shape styling; appears behind hero illustration */
   position: absolute;
-  top: -20%;
-  left: 10%;
-  width: 80%;
-  height: 120%;
+  top: -15%;
+  left: 5%;
+  width: 90%;
+  height: 130%;
   background: var(--color-accent-mint);
-  opacity: 0.15;
+  opacity: 0.25;
   border-radius: 50%;
   z-index: 1;
 }
