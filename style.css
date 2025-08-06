@@ -101,6 +101,13 @@ body {
   opacity: 0.9;
 }
 
+/* Metrics line in hero */
+.hero-metrics {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
 /* Buttons */
 .btn-primary,
 .btn-secondary {
@@ -188,6 +195,28 @@ body {
 
 .service-card:hover {
   transform: translateY(-4px);
+}
+
+/* Pain points list */
+.pain-points {
+  list-style: none;
+  max-width: 800px;
+  margin: 1rem auto 2rem;
+  padding: 0;
+  font-size: 0.95rem;
+}
+.pain-points li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+.pain-points li::before {
+  content: '\2022';
+  color: #00a378;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
 }
 
 /* How It Works Section */
@@ -440,6 +469,9 @@ body {
 .edge-card:nth-child(1) { animation-delay: 0.1s; }
 .edge-card:nth-child(2) { animation-delay: 0.2s; }
 .edge-card:nth-child(3) { animation-delay: 0.3s; }
+/* Additional delays for more edge cards */
+.edge-card:nth-child(4) { animation-delay: 0.4s; }
+.edge-card:nth-child(5) { animation-delay: 0.5s; }
 
 /* Animations */
 @keyframes fadeInUp {
@@ -494,6 +526,79 @@ body {
 .pricing-card:nth-child(1) { animation-delay: 0.1s; }
 .pricing-card:nth-child(2) { animation-delay: 0.2s; }
 .pricing-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Pricing table styles */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #e0e6ed;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.pricing-table th {
+  background-color: #f7f9fb;
+  color: #0075c9;
+  font-weight: 600;
+}
+.pricing-table tbody tr:nth-child(even) {
+  background-color: #f9fcfe;
+}
+
+/* Features table styles */
+.features-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+.features-table th,
+.features-table td {
+  border: 1px solid #e0e6ed;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+.features-table th {
+  background-color: #f7f9fb;
+  color: #0075c9;
+  font-weight: 600;
+}
+.features-table tbody tr:nth-child(even) {
+  background-color: #f9fcfe;
+}
+
+/* CTA section */
+.cta-section {
+  padding: 4rem 0;
+  background-color: #f7f9fb;
+  text-align: center;
+}
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.cta-section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pricing-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
 
 /* Delay for contact section */
 .contact .container { animation-delay: 0.1s; }
