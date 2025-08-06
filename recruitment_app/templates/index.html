@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h1 class="h3">Submitted Roles</h1>
+  <a href="{{ url_for('new_role') }}" class="btn btn-success">Create New Role</a>
+</div>
+
+{% if roles %}
+  <div class="table-responsive">
+    <table class="table table-hover align-middle">
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Date Created</th>
+          <th scope="col">Candidates</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for role in roles %}
+        <tr>
+          <td>{{ role['title'] }}</td>
+          <td>{{ role['date_created'][:10] }}</td>
+          <td>{{ role['candidate_count'] }}</td>
+          <td><a href="{{ url_for('view_role', role_id=role['id']) }}" class="btn btn-outline-primary btn-sm">View</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p>No roles submitted yet. Click <strong>Create New Role</strong> to get started.</p>
+{% endif %}
+{% endblock %}
