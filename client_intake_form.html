@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HireLoop AI – Client Intake Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Form-specific overrides */
+    .form-container {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-color: #ffffff;
+      padding: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+    .form-container h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .form-actions {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .form-actions button {
+      padding: 0.75rem 1.5rem;
+      background-color: #1a75bb;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .form-actions button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container flex">
+      <a href="index.html"><img src="assets/logo.png" alt="HireLoop AI logo" class="logo"></a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="form-container">
+    <h1>Client Intake Form</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="clientName">Your Name</label>
+        <input type="text" id="clientName" name="clientName" required>
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input type="text" id="companyName" name="companyName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="roleTitle">Role Title</label>
+        <input type="text" id="roleTitle" name="roleTitle" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="City, State or Remote">
+      </div>
+      <div class="form-group">
+        <label for="employmentType">Employment Type</label>
+        <select id="employmentType" name="employmentType">
+          <option value="full-time">Full-Time</option>
+          <option value="part-time">Part-Time</option>
+          <option value="contract">Contract</option>
+          <option value="internship">Internship</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="seniority">Seniority Level</label>
+        <select id="seniority" name="seniority">
+          <option value="junior">Junior</option>
+          <option value="mid">Mid</option>
+          <option value="senior">Senior</option>
+          <option value="executive">Executive</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Role Description</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe the responsibilities, goals, and unique aspects of the role"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="skills">Required Skills & Technologies</label>
+        <textarea id="skills" name="skills" rows="3" placeholder="List key skills, tools, and technologies"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="salaryRange">Salary Range (optional)</label>
+        <input type="text" id="salaryRange" name="salaryRange" placeholder="$80k–$110k">
+      </div>
+      <div class="form-group">
+        <label for="startDate">Preferred Start Date</label>
+        <input type="date" id="startDate" name="startDate">
+      </div>
+      <div class="form-group">
+        <label for="additionalInfo">Additional Information</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="3" placeholder="Anything else we should know?"></textarea>
+      </div>
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 HireLoop AI. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
