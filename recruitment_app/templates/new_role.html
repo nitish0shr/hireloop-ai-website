@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="h3 mb-3">Create New Role</h1>
+<form method="post">
+  <div class="mb-3">
+    <label for="title" class="form-label">Role Title</label>
+    <input type="text" class="form-control" id="title" name="title" required>
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Job Description</label>
+    <textarea class="form-control" id="description" name="description" rows="8" required></textarea>
+    <div class="form-text">Paste the full job description here. The system will parse it and generate candidate profiles.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
