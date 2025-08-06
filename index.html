@@ -12,9 +12,10 @@
       <img src="logo.png" alt="HireLoop AI logo" class="logo">
       <nav>
         <ul class="nav-list">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <!-- Updated navigation reflects new sections on the page -->
+          <li><a href="#services">Modules</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#plans">Plans</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -23,7 +24,7 @@
 
   <section class="hero">
     <div class="container">
-      <h1>HireLoop AI</h1>
+      <h1>HireLoop&nbsp;AI</h1>
       <p class="subtitle">Smarter hiring with AI agents</p>
       <p class="description">Building high‑performance teams doesn’t have to be manual. HireLoop AI automates sourcing, outreach, screening and scheduling so you can focus on what matters — engaging top talent.</p>
       <a href="client_intake_form.html" class="btn-primary">Get Started</a>
@@ -32,27 +33,51 @@
 
   <section id="services" class="services">
     <div class="container">
-      <h2>Core Services</h2>
+      <h2>Core Service Modules</h2>
       <div class="service-grid">
+        <!-- AI Sourcing-as-a-Service -->
         <div class="service-card">
-          <h3><span class="emoji">🔍</span> AI Sourcing</h3>
-          <p>Leverage AI to search databases and social platforms for candidates that match your job description. Receive a structured list of prospects with match reasons.</p>
+          <h3><span class="emoji">🔍</span> AI&nbsp;Sourcing‑as‑a‑Service</h3>
+          <ul>
+            <li><strong>Input:</strong> Upload your job description</li>
+            <li><strong>Process:</strong> GPT parses role & skills, generates Boolean/X‑ray search strings and sources candidates via Apollo, Loxo & Clay</li>
+            <li><strong>Deliverable:</strong> Google Sheet or Airtable with Name, Title, Company, Location, LinkedIn & Match Reason</li>
+            <li><strong>TAT:</strong> 2 weeks | <strong>Fee:</strong> $5,000 per role</li>
+          </ul>
         </div>
+        <!-- Outreach Automation -->
         <div class="service-card">
-          <h3><span class="emoji">✉️</span> Outreach Automation</h3>
-          <p>Create personalised outreach campaigns powered by AI. Automate follow‑ups, track open and reply rates and sync metrics back to your dashboard.</p>
+          <h3><span class="emoji">✉️</span> Outreach&nbsp;Automation</h3>
+          <ul>
+            <li>GPT writes personalised outreach based on your JD & candidate profiles</li>
+            <li>Emails sent via Instantly.ai or Smartlead</li>
+            <li>Open/reply tracking synced to your dashboard</li>
+          </ul>
         </div>
+        <!-- AI Screening Agent -->
         <div class="service-card">
-          <h3><span class="emoji">🤔</span> AI Screening</h3>
-          <p>Use AI to parse resumes, assess skill fit and culture alignment, and generate concise candidate summaries with interview question suggestions.</p>
+          <h3><span class="emoji">🧠</span> AI&nbsp;Screening Agent</h3>
+          <ul>
+            <li>Generate a 1‑line summary & ratings for culture, technical & experience fit</li>
+            <li>Optional auto‑generated interview questions and scheduling links</li>
+          </ul>
         </div>
+        <!-- Interview Coordination Agent -->
         <div class="service-card">
-          <h3><span class="emoji">🗓️</span> Interview Coordination</h3>
-          <p>Automate scheduling across calendars and time zones. Send invites, reminders and thank‑you notes seamlessly via Calendly and Zapier integrations.</p>
+          <h3><span class="emoji">📅</span> Interview&nbsp;Coordination Agent</h3>
+          <ul>
+            <li>Send Calendly invites to shortlisted candidates</li>
+            <li>Automated confirmations and reminders via Zapier</li>
+          </ul>
         </div>
+        <!-- Client Dashboard & Tracking -->
         <div class="service-card">
-          <h3><span class="emoji">🔺</span> Reporting & Dashboard</h3>
-          <p>Visualise your entire pipeline in one place. Track sourcing volume, outreach metrics, screening scores, interview feedback and hires from a single dashboard.</p>
+          <h3><span class="emoji">📊</span> Client&nbsp;Dashboard & Tracking</h3>
+          <ul>
+            <li>Live status for Sourced, Contacted, Responded, Screened & Interviewed</li>
+            <li>Notes & feedback per candidate</li>
+            <li>Scorecards, JD analysis & match reasons embedded</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -61,7 +86,7 @@
   <!-- Why HireLoop AI Section -->
   <section id="features" class="features">
     <div class="container">
-      <h2>Why HireLoop AI?</h2>
+      <h2>Why HireLoop&nbsp;AI?</h2>
       <p class="features-subtitle">We combine human expertise with cutting‑edge AI to deliver unmatched recruitment efficiency.</p>
       <div class="feature-grid">
         <div class="feature-card">
@@ -84,54 +109,81 @@
     </div>
   </section>
 
-  <section id="how-it-works" class="how">
+  <section id="workflow" class="how">
     <div class="container">
-      <h2>How It Works</h2>
+      <h2>End‑to‑End Workflow</h2>
       <ol class="steps">
-        <li><strong>Submit your requirements:</strong> Fill out our intake form with the role, location and key criteria.</li>
-        <li><strong>AI agents go to work:</strong> Our sourcing and screening agents search multiple data sources, score candidates and prepare outreach.</li>
-        <li><strong>Engage candidates:</strong> Personalised emails are sent automatically and interested candidates are scheduled for interviews.</li>
-        <li><strong>Make better hires:</strong> Review candidate summaries, interview notes and analytics in your dashboard to make data‑driven hiring decisions.</li>
+        <li><strong>Upload JD:</strong> Submit your role via our form or drag‑and‑drop.</li>
+        <li><strong>JD&nbsp;Analyzer:</strong> GPT parses the role & generates search strings, scoring criteria & outreach copy.</li>
+        <li><strong>Sourcing&nbsp;Bot:</strong> Searches Apollo, LinkedIn & Clay for top matches and loads them into Airtable.</li>
+        <li><strong>Outreach&nbsp;Bot:</strong> Sends personalised emails, monitors open/reply rates and adjusts sequences.</li>
+        <li><strong>Resume&nbsp;Screener:</strong> AI evaluates resumes & replies, scores and shortlists candidates.</li>
+        <li><strong>Interview&nbsp;Coordination:</strong> Calendly invites, confirmations & reminders are sent automatically.</li>
+        <li><strong>Dashboard&nbsp;& Reports:</strong> View your pipeline, scorecards and match summaries in real time.</li>
       </ol>
       <a href="client_intake_form.html" class="btn-secondary">Submit a role</a>
     </div>
   </section>
 
-  <!-- Pricing section -->
-  <section id="pricing" class="pricing">
+  <!-- Our Competitive Edge Section -->
+  <section id="edge" class="edge">
     <div class="container">
-      <h2>Simple, Transparent Pricing</h2>
-      <p class="pricing-subtitle">Choose a plan that fits your hiring needs. Pay per role with no hidden fees.</p>
+      <h2>Our Competitive Edge</h2>
+      <div class="edge-grid">
+        <div class="edge-card">
+          <h3><span class="emoji">⚙️</span> AI‑First Automation</h3>
+          <p>75% faster screening & sourcing with predictive matching and a unified dashboard.</p>
+        </div>
+        <div class="edge-card">
+          <h3><span class="emoji">🌍</span> Global Coverage</h3>
+          <p>Operate across the US, India & UAE with knowledge of local hiring norms & 24/7 support.</p>
+        </div>
+        <div class="edge-card">
+          <h3><span class="emoji">🛠️</span> No‑Code Infrastructure</h3>
+          <p>Built on Zapier, Airtable & Notion. GPT via OpenAI/Claude. Scalable with minimal effort.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing section -->
+  <section id="plans" class="pricing">
+    <div class="container">
+      <h2>Plans&nbsp;&amp;&nbsp;Pricing</h2>
+      <p class="pricing-subtitle">Flexible options for startups and scaleups</p>
       <div class="pricing-grid">
+        <!-- AI Sourcing-as-a-Service plan -->
         <div class="pricing-card">
-          <h3>Starter</h3>
-          <p class="price">$499 <span>/ role</span></p>
+          <h3>AI&nbsp;Sourcing‑as‑a‑Service</h3>
+          <p class="price">$5,000 <span>/ role</span></p>
           <ul>
-            <li>AI sourcing list up to 50 candidates</li>
-            <li>Personalised outreach sequences</li>
-            <li>Resume screening scores</li>
+            <li>Upload JD → 10 matched resumes delivered in 2 weeks</li>
+            <li>Boolean search & GPT screening summary included</li>
+            <li>Pay per role</li>
           </ul>
         </div>
+        <!-- Full Cycle Recruiting plan -->
         <div class="pricing-card featured">
-          <h3>Growth</h3>
-          <p class="price">$999 <span>/ role</span></p>
+          <h3>Full‑Cycle AI Recruiting Pod</h3>
+          <p class="price">$5,000 <span>/ month + hire bonus</span></p>
           <ul>
-            <li>Everything in Starter</li>
-            <li>Interview coordination</li>
-            <li>Realtime hiring dashboard</li>
+            <li>1–3 roles per month with end‑to‑end support</li>
+            <li>Sourcing, outreach, screening & scheduling</li>
+            <li>Weekly candidate briefs & dashboard access</li>
           </ul>
         </div>
+        <!-- On‑Demand Toolkit plan -->
         <div class="pricing-card">
-          <h3>Enterprise</h3>
-          <p class="price">Custom</p>
+          <h3>On‑Demand AI Recruiter Toolkit</h3>
+          <p class="price">$2,000 <span>/ month / user</span></p>
           <ul>
-            <li>Unlimited roles and hires</li>
-            <li>Dedicated talent strategist</li>
-            <li>Custom integrations & support</li>
+            <li>Plug‑and‑play GPT agents for in‑house teams</li>
+            <li>Includes all modules & automation</li>
+            <li>Scalable to 100+ concurrent roles</li>
           </ul>
         </div>
       </div>
-      <a href="client_intake_form.html" class="btn-secondary">Get Started</a>
+      <a href="client_intake_form.html" class="btn-secondary">Start Today</a>
     </div>
   </section>
 

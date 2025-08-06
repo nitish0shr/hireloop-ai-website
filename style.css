@@ -55,9 +55,10 @@ body {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
   position: relative;
-  background-image: url('assets/ai_background.png');
+  background-image: url('ai_background.png');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -153,6 +154,23 @@ body {
   padding: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease-in-out;
+}
+
+/* Lists inside service cards */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card ul li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.service-card ul li strong {
+  color: #0075c9;
 }
 
 .service-card h3 {
@@ -325,3 +343,157 @@ body {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Features Section */
+.features {
+  padding: 4rem 0;
+  background-color: #f7f9fb;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.features-subtitle {
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #0075c9;
+}
+
+.feature-card p {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Edge Section */
+.edge {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.edge h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.edge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.edge-card {
+  background-color: #f7f9fb;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.edge-card h3 {
+  margin-top: 0;
+  color: #0075c9;
+  font-size: 1.25rem;
+}
+
+.edge-card p {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.edge-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Staggered delays for edge cards */
+.edge-card:nth-child(1) { animation-delay: 0.1s; }
+.edge-card:nth-child(2) { animation-delay: 0.2s; }
+.edge-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in animation to various sections */
+.hero .container {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.service-card,
+.feature-card,
+.steps li,
+.pricing-card,
+.contact .container {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Staggered delays for service cards */
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+.service-card:nth-child(4) { animation-delay: 0.4s; }
+.service-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* Staggered delays for feature cards */
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Staggered delays for how-it-works steps */
+.steps li:nth-child(1) { animation-delay: 0.1s; }
+.steps li:nth-child(2) { animation-delay: 0.2s; }
+.steps li:nth-child(3) { animation-delay: 0.3s; }
+.steps li:nth-child(4) { animation-delay: 0.4s; }
+.steps li:nth-child(5) { animation-delay: 0.5s; }
+.steps li:nth-child(6) { animation-delay: 0.6s; }
+.steps li:nth-child(7) { animation-delay: 0.7s; }
+
+/* Staggered delays for pricing cards */
+.pricing-card:nth-child(1) { animation-delay: 0.1s; }
+.pricing-card:nth-child(2) { animation-delay: 0.2s; }
+.pricing-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Delay for contact section */
+.contact .container { animation-delay: 0.1s; }
