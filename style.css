@@ -1,0 +1,224 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-list li a:hover {
+  color: #0075c9;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0075c9, #00b388);
+  color: #fff;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero .subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.hero .description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #1a75bb;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #005fa3;
+}
+
+.btn-secondary {
+  background-color: #00a378;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #008a63;
+}
+
+/* Services Section */
+.services {
+  padding: 4rem 0;
+  background-color: #f7f9fb;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0075c9;
+}
+
+.service-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* How It Works Section */
+.how {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.how h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.steps {
+  counter-reset: step;
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #00b388;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 0;
+  background-color: #f7f9fb;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem 0;
+  background-color: #1a75bb;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+}
